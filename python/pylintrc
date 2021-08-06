@@ -311,12 +311,17 @@ function-naming-style=snake_case
 #function-rgx=
 
 # Good variable names which should always be accepted, separated by a comma.
-good-names=i,
-           j,
-           k,
-           ex,
-           Run,
-           _
+# database, delta-time, exception, file modes, x, serial number
+good-names=_,
+           db,
+           dt,
+           e,
+           fr,
+           fw,
+           fa,
+           x,
+           sn
+
 
 # Good variable names regexes, separated by a comma. If names match any regex,
 # they will always be accepted
