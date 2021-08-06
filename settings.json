@@ -1,0 +1,221 @@
+{
+    "window.zoomLevel": 1,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true, // Use Ligatures of font
+    "editor.formatOnType": false, // Disable Format on Type
+    "editor.formatOnSave": true,
+    "editor.quickSuggestions": true, // Show Quick Suggestions
+    "editor.acceptSuggestionOnEnter": "off", // Click Enter to accept suggestion
+    "editor.renderIndentGuides": true, // Display Indent Guides
+    "editor.detectIndentation": true, // Detect Indentation by file type
+    "editor.insertSpaces": true, // Replace tab with spaces
+    "editor.rulers": [
+        79,
+        119,
+        129
+    ],
+    "files.eol": "\n",
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true, // Trim Trailing Whitespace
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true, // Python
+        "**/*.egg-info": true // Python
+    },
+    /* Git */
+    "diffEditor.ignoreTrimWhitespace": false,
+    /* Terminal */
+    "terminal.integrated.scrollback": 10000,
+    /* Workbench */
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    /* Language: Python */
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.codeActionsOnSave": { // Do something on Save
+            "source.organizeImports": true // Sort imports
+        },
+    },
+    "python.linting.pylintEnabled": true, // Use `pylint`
+    "python.linting.pylintArgs": [
+        // List of members which are set dynamically and missed by pylint inference system,
+        // and so shouldn't trigger E1101 when accessed.
+        "--generate-members"
+    ],
+    "python.sortImports.args": [
+        "-rc",
+        "--atomic"
+    ], // Use `isort`
+    // "python.sortImports.path": ".isort.cfg",
+    "python.formatting.autopep8Args": [
+        "--max-line-length=119"
+    ],
+    "python.autoComplete.addBrackets": false, // Dont not Auto add Brackets
+    "python.autoComplete.showAdvancedMembers": false,
+    "python.analysis.extraPaths": [
+        "./backend" // project: <gitlab>/vunk/portal/backend
+    ],
+    /* Language: Dockerfile */
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    /* Language: HTML & Javascript */
+    "vetur.format.enable": false,
+    "vetur.validation.template": false,
+    "emmet.syntaxProfiles": {
+        "vue-html": "html",
+        "vue": "html",
+        "jsx": "html",
+    },
+    // "prettier.printWidth": 119,
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": { // Do something on Save
+            "source.fixAll.eslint": true,
+            "source.fixAll.stylelint": true
+        },
+    },
+    "[vue]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": { // Do something on Save
+            "source.fixAll.eslint": true,
+            "source.fixAll.stylelint": true
+        },
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": { // Do something on Save
+            "source.fixAll.eslint": true,
+            "source.fixAll.stylelint": true
+        },
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": { // Do something on Save
+            "source.fixAll.eslint": true,
+            "source.fixAll.stylelint": true
+        },
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": { // Do something on Save
+            "source.fixAll.eslint": true,
+            "source.fixAll.stylelint": true
+        },
+    },
+    /* Better Comments */
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+    /* Bracket Pair Colorizer 1 */
+    // "bracketPairColorizer.showBracketsInGutter": true,
+    /* Bracket Pair Colorizer 2 */
+    /* Power Mode */
+    "powermode.shakeIntensity": 0,
+    "powermode.enabled": true,
+    "powermode.presets": "flames",
+    "powermode.explosionFrequency": 1,
+    /* Vim */
+    "vim.useCtrlKeys": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "k",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-s>": false,
+        "<C-d>": false,
+        "<C-f>": false,
+        "<C-w>": false,
+        "<C-x>": false,
+        "<C-a>": false,
+    },
+    "cSpell.words": [
+        /* Python packages */
+        "boto",
+        "pipenv",
+        /* Product */
+        "grafana",
+        "alertmanager",
+        "cadvisor",
+        "gitlab",
+        /* Author */
+        "vunk"
+    ],
+    "cSpell.enableFiletypes": [
+        "shellscript"
+    ],
+    "outline.showVariables": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+}
