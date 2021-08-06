@@ -537,7 +537,8 @@ max-branches=12
 max-locals=15
 
 # Maximum number of parents for a class (see R0901).
-max-parents=7
+# Django's view classes will have hierarchies that are deeper than default 7
+max-parents=15
 
 # Maximum number of public methods for a class (see R0904).
 max-public-methods=20
@@ -549,7 +550,10 @@ max-returns=6
 max-statements=50
 
 # Minimum number of public methods for a class (see R0903).
-min-public-methods=2
+# If your class has a single method on it, it's probably a function in disguise.
+# However, we sometimes inherit a class for overwriting only one method
+# or class-attributes.
+min-public-methods=0
 
 
 [IMPORTS]
